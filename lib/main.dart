@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_interns/assesment_1/fi_ilyas.dart';
 
-import 'my_assignment/ilyas.dart';
-
 void main(List<String> args) {
   runApp(const MyApp());
 }
