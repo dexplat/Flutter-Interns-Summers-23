@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class FIMutahar extends StatelessWidget {
-  const FIMutahar({super.key});
+class FImutahar extends StatelessWidget {
+  const FImutahar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class FIMutahar extends StatelessWidget {
         title: const Text("MUTAHAR"),
       ),
       body: const Center(
-        child: Text("Hello! I MUTAHAR"),
+        child: Text("Hello! I AM MUTAHAR"),
       ),
     );
   }
