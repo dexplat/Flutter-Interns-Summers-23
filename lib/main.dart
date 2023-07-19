@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_interns/assesment_1/fi_hunaina.dart';
 
 import 'assesment_1/fi_uzair.dart';
 
