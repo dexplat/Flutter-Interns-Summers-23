@@ -7,12 +7,9 @@ class HomeListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const listitemwidth = SizedBox(
-      width: 25,
-    );
     return SizedBox(
       width: MediaQuery.sizeOf(context).width,
-      height: 65,
+      height: 66,
       child: ListView(
         padding: EdgeInsets.zero,
         scrollDirection: Axis.horizontal,
@@ -41,19 +38,15 @@ class HomeListView extends StatelessWidget {
               ],
             ),
           ),
-          listitemwidth,
           RoundedPic(
               borderclr: AppColors.primaryColor,
               custompic: Image.asset('assets/man1.png')),
-          listitemwidth,
           RoundedPic(
               borderclr: AppColors.primaryColor,
               custompic: Image.asset('assets/girl2.png')),
-          listitemwidth,
           RoundedPic(
               borderclr: AppColors.primaryColor,
               custompic: Image.asset('assets/man1.png')),
-          listitemwidth,
         ],
       ),
     );

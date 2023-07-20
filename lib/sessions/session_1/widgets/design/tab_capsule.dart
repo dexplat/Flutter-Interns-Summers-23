@@ -24,12 +24,10 @@ class TabCapsule extends StatelessWidget {
               onTap: () {
                 if (i == 1) {
                   // 2nd gesture
-                  print('this is 2nd'); // PR must be without print()
+                  // PR must be without print()
 
                   // debugPrint() --> debugging
-                } else {
-                  print('this is first');
-                }
+                } else {}
               },
               child: Container(
                 height: 60.0,

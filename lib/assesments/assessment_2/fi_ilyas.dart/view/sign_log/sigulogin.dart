@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_interns/assesments/assessment_2/fi_ilyas.dart/view/home/homescreen.dart';
-import 'package:flutter_interns/assesments/assessment_2/fi_ilyas.dart/view/sign_log/button.dart';
+import 'package:flutter_interns/assesments/assessment_2/fi_ilyas.dart/view/sign_log/custom_widget/button.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class LogInScreen extends StatelessWidget {
@@ -38,7 +38,7 @@ class LogInScreen extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => HomeScreen()),
+              MaterialPageRoute(builder: (context) => const HomeScreen()),
             );
           },
           child: MyAppButton(

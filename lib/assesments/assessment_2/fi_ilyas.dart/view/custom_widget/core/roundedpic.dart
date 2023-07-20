@@ -9,8 +9,8 @@ class RoundedPic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 60,
-        width: 60,
+        height: 85,
+        width: 85,
         decoration: BoxDecoration(
           border: Border.all(
               color: borderclr,
@@ -19,7 +19,10 @@ class RoundedPic extends StatelessWidget {
               strokeAlign: BorderSide.strokeAlignCenter),
           shape: BoxShape.circle,
         ),
-        child: custompic);
+        child: Padding(
+          padding: const EdgeInsets.all(2.0),
+          child: custompic,
+        ));
   }
 }
 

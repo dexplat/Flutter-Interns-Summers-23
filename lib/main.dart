@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'assesments/assessment_2/fi_ilyas.dart/view/home/homescreen.dart';
-import 'assesments/assessment_2/fi_ilyas.dart/view/sign_log/screenone.dart';
+import 'package:flutter_interns/assesments/assessment_2/fi_ilyas.dart/view/sign_log/sigulogin.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
