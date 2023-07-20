@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_interns/assesments/assessment_2/fi_as2_saleh/constants/constants.dart';
 import 'package:flutter_interns/assesments/assessment_2/fi_as2_saleh/screens/profile/fi_as2_saleh_profile.dart';
 import 'package:flutter_interns/assesments/assessment_2/fi_as2_saleh/screens/home/widgets/fi_as2_saleh_avatar.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -71,7 +72,7 @@ class _HomeState extends State<Home> {
                 children: [
                   const ListTile(
                     leading: CircleAvatar(
-                      backgroundColor: Color(0xFFFA9884),
+                      backgroundColor: Constants.orangeColor,
                       radius: 30,
                       child: CircleAvatar(
                         backgroundColor: Colors.white,
@@ -194,7 +195,7 @@ class _HomeState extends State<Home> {
             Icon(
               Icons.home_filled,
               size: 35,
-              color: Color(0xFFFA9884),
+              color: Constants.orangeColor,
             ),
             Icon(
               Icons.search,

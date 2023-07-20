@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_interns/assesments/assessment_2/fi_as2_saleh/screens/home/fi_as2_saleh_home.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 
-class LoginSaleh extends StatefulWidget {
-  const LoginSaleh({super.key});
+class Welcome extends StatefulWidget {
+  const Welcome({super.key});
 
   @override
-  State<LoginSaleh> createState() => _LoginSalehState();
+  State<Welcome> createState() => _WelcomeState();
 }
 
-class _LoginSalehState extends State<LoginSaleh> {
+class _WelcomeState extends State<Welcome> {
   // final String assetName = 'assets/svgs/home.svg';
   final Widget smallPadding = const SizedBox(
     height: 50,
