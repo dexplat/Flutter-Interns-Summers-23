@@ -24,11 +24,11 @@ class AppButton extends StatelessWidget {
     return InkWell(
       onTap: onPressed,
       child: Container(
-        padding: const EdgeInsets.all(20.0),
-        width: double.infinity,
+        padding: const EdgeInsets.all(10.0),
         decoration: BoxDecoration(
           color: color,
-          borderRadius: BorderRadius.circular(12.0),
+          borderRadius: BorderRadius.circular(7.0),
+          border: Border.all(color: Colors.grey),
         ),
         child: Center(
           child: child,
