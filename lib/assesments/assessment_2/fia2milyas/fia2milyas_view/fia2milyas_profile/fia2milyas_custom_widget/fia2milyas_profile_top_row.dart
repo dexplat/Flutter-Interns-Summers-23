@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class ProfileTopRow extends StatelessWidget {
-  const ProfileTopRow({super.key});
+class FiA2MIlyasProfileTopRow extends StatelessWidget {
+  const FiA2MIlyasProfileTopRow({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_interns/assesments/assessment_2/fi_ilyas.dart/view/sign_log/sigulogin.dart';
+import 'package:flutter_interns/assesments/assessment_2/fia2milyas/fia2milyas_view/fia2milyas_sign_log/fia2milyas_signlogin_screen.dart';
+import 'package:flutter_interns/sessions/session_1/s1_home.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LogInScreen(),
+      home: FiA2MIlyasLogInScreen(),
     );
   }
 }

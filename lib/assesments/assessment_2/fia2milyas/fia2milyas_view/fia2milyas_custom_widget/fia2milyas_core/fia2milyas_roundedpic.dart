@@ -1,28 +1,29 @@
 import 'package:flutter/material.dart';
 
-// ignore: must_be_immutable
-class RoundedPic extends StatelessWidget {
-  Color borderclr;
-  Widget custompic;
-  RoundedPic({super.key, required this.borderclr, required this.custompic});
+class FiA2MIlyasRoundedPic extends StatelessWidget {
+  final Color borderClr;
+  final Widget custompic;
+  const FiA2MIlyasRoundedPic(
+      {super.key, required this.borderClr, required this.custompic});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 85,
-        width: 85,
-        decoration: BoxDecoration(
-          border: Border.all(
-              color: borderclr,
-              width: 3,
-              style: BorderStyle.solid,
-              strokeAlign: BorderSide.strokeAlignCenter),
-          shape: BoxShape.circle,
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(2.0),
-          child: custompic,
-        ));
+      height: 85,
+      width: 85,
+      decoration: BoxDecoration(
+        border: Border.all(
+            color: borderClr,
+            width: 3,
+            style: BorderStyle.solid,
+            strokeAlign: BorderSide.strokeAlignCenter),
+        shape: BoxShape.circle,
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(2.0),
+        child: custompic,
+      ),
+    );
   }
 }
 

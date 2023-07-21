@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_interns/assesments/assessment_2/fi_ilyas.dart/const/color.dart';
-import 'package:flutter_interns/assesments/assessment_2/fi_ilyas.dart/view/custom_widget/core/roundedpic.dart';
-import 'package:flutter_interns/assesments/assessment_2/fi_ilyas.dart/view/profile/custom_widget/profile_photo_vedio.dart';
-import 'package:flutter_interns/assesments/assessment_2/fi_ilyas.dart/view/profile/custom_widget/profile_top_row.dart';
-import 'custom_widget/profile_all_followers.dart';
-import 'custom_widget/profile_all_post_pic.dart';
+import 'package:flutter_interns/assesments/assessment_2/fia2milyas/fia2milyas_constant/fia2milyas_color.dart';
+import 'package:flutter_interns/assesments/assessment_2/fia2milyas/fia2milyas_view/fia2milyas_custom_widget/fia2milyas_core/fia2milyas_roundedpic.dart';
+import 'package:flutter_interns/assesments/assessment_2/fia2milyas/fia2milyas_view/fia2milyas_profile/fia2milyas_custom_widget/fia2milyas_profile_photo_vedio.dart';
+import 'package:flutter_interns/assesments/assessment_2/fia2milyas/fia2milyas_view/fia2milyas_profile/fia2milyas_custom_widget/fia2milyas_profile_top_row.dart';
+import 'fia2milyas_custom_widget/fia2milyas_profile_all_followers.dart';
+import 'fia2milyas_custom_widget/fia2milyas_profile_all_post_pic.dart';
 
-class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
+class FiA2MIlyasProfileScreen extends StatelessWidget {
+  const FiA2MIlyasProfileScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,14 +20,12 @@ class ProfileScreen extends StatelessWidget {
           ),
           child: Column(
             children: [
-              // Top Row=> profile back button,image, and setting lies in below file
-              const ProfileTopRow(),
-
+              const FiA2MIlyasProfileTopRow(),
               const SizedBox(
                 height: 40,
               ),
-              RoundedPic(
-                borderclr: AppColors.whiteclr,
+              FiA2MIlyasRoundedPic(
+                borderClr: AppColors.whiteclr,
                 custompic: Image.asset(
                   'assets/girl1.png',
                 ),
@@ -51,21 +49,15 @@ class ProfileScreen extends StatelessWidget {
               const SizedBox(
                 height: 40,
               ),
-
-//all photos followers and follows lies on below file
-              const ProfileAllFollower(),
-
+              const FiA2MIlyasProfileAllFollower(),
               const SizedBox(
                 height: 40,
               ),
-              // photo vedio tagged and more icon row are below
-              const PhotoVedioRow(),
+              const FiA2MIlyasPhotoVedioRow(),
               const SizedBox(
                 height: 15,
               ),
-
-              //all posted picture are in this files
-              const AllPostPicture(),
+              const FiA2MIlyasAllPostPicture(),
             ],
           ),
         ),

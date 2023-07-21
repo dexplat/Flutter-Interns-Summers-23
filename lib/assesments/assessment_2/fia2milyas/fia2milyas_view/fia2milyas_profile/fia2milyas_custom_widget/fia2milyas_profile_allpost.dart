@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 
-// ignore: must_be_immutable
-class ProfileAllPost extends StatelessWidget {
-  ProfileAllPost({super.key, required this.url});
-  String url;
+class FiA2MIlyasProfileAllPost extends StatelessWidget {
+  final String url;
+  const FiA2MIlyasProfileAllPost({super.key, required this.url});
 
   @override
   Widget build(BuildContext context) {

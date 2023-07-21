@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_interns/assesments/assessment_2/fi_ilyas.dart/const/color.dart';
-import 'package:flutter_interns/assesments/assessment_2/fi_ilyas.dart/view/custom_widget/core/roundedpic.dart';
+import 'package:flutter_interns/assesments/assessment_2/fia2milyas/fia2milyas_constant/fia2milyas_color.dart';
+import 'package:flutter_interns/assesments/assessment_2/fia2milyas/fia2milyas_view/fia2milyas_custom_widget/fia2milyas_core/fia2milyas_roundedpic.dart';
 
-class HomeListView extends StatelessWidget {
-  const HomeListView({super.key});
+class FiA2MIlyasHomeListView extends StatelessWidget {
+  const FiA2MIlyasHomeListView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,11 +18,12 @@ class HomeListView extends StatelessWidget {
             height: 70,
             child: Stack(
               children: [
-                RoundedPic(
-                    borderclr: AppColors.whiteclr,
-                    custompic: Image.asset(
-                      'assets/girl2.png',
-                    )),
+                FiA2MIlyasRoundedPic(
+                  borderClr: AppColors.whiteclr,
+                  custompic: Image.asset(
+                    'assets/girl2.png',
+                  ),
+                ),
                 Positioned(
                   top: 0,
                   right: 0,
@@ -32,20 +33,19 @@ class HomeListView extends StatelessWidget {
                     'assets/addtop.png',
                     height: 30,
                     width: 30,
-                    //color: AppColors.whiteclr.withOpacity(1),
                   ),
-                )
+                ),
               ],
             ),
           ),
-          RoundedPic(
-              borderclr: AppColors.primaryColor,
+          FiA2MIlyasRoundedPic(
+              borderClr: AppColors.primaryColor,
               custompic: Image.asset('assets/man1.png')),
-          RoundedPic(
-              borderclr: AppColors.primaryColor,
+          FiA2MIlyasRoundedPic(
+              borderClr: AppColors.primaryColor,
               custompic: Image.asset('assets/girl2.png')),
-          RoundedPic(
-              borderclr: AppColors.primaryColor,
+          FiA2MIlyasRoundedPic(
+              borderClr: AppColors.primaryColor,
               custompic: Image.asset('assets/man1.png')),
         ],
       ),

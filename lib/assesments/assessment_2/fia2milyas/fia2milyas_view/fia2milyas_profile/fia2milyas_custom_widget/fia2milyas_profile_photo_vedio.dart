@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_interns/assesments/assessment_2/fi_ilyas.dart/const/color.dart';
+import 'package:flutter_interns/assesments/assessment_2/fia2milyas/fia2milyas_constant/fia2milyas_color.dart';
 
-class PhotoVedioRow extends StatelessWidget {
-  const PhotoVedioRow({super.key});
+class FiA2MIlyasPhotoVedioRow extends StatelessWidget {
+  const FiA2MIlyasPhotoVedioRow({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,13 +18,14 @@ class PhotoVedioRow extends StatelessWidget {
             borderRadius: BorderRadius.circular(50),
           ),
           child: const Center(
-              child: Text(
-            'Photos',
-            style: TextStyle(
-                color: AppColors.whiteclr,
-                fontSize: 18,
-                fontWeight: FontWeight.w600),
-          )),
+            child: Text(
+              'Photos',
+              style: TextStyle(
+                  color: AppColors.whiteclr,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600),
+            ),
+          ),
         ),
         const Text(
           'Video',
@@ -46,7 +47,7 @@ class PhotoVedioRow extends StatelessWidget {
             'assets/More.png',
             fit: BoxFit.contain,
           ),
-        )
+        ),
       ],
     );
   }

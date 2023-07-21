@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 
-// ignore: must_be_immutable
-class MyAppButton extends StatelessWidget {
-  String buttontxt;
-  Color concolor;
-  Color txtclr;
-  MyAppButton(
+class FiA2MIlyasMyAppButton extends StatelessWidget {
+  final String buttontxt;
+  final Color concolor;
+  final Color txtclr;
+  const FiA2MIlyasMyAppButton(
       {super.key,
       required this.buttontxt,
       required this.concolor,
@@ -19,9 +18,12 @@ class MyAppButton extends StatelessWidget {
         height: 65,
         width: 320,
         decoration: BoxDecoration(
-            color: concolor,
-            borderRadius: BorderRadius.circular(50),
-            border: Border.all(color: const Color(0xff9E9898))),
+          color: concolor,
+          borderRadius: BorderRadius.circular(50),
+          border: Border.all(
+            color: const Color(0xff9E9898),
+          ),
+        ),
         child: Center(
           child: Text(
             buttontxt,
@@ -32,9 +34,5 @@ class MyAppButton extends StatelessWidget {
         ),
       ),
     );
-
-// top: 622px
-// left: 24px
-// border-radius: 50px
   }
 }

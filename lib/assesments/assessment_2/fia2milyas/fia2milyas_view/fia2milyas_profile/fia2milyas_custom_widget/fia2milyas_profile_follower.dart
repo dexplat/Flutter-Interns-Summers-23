@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-// ignore: must_be_immutable
-class ProfileFollower extends StatelessWidget {
-  String title;
-  String value;
-  ProfileFollower({super.key, required this.title, required this.value});
+class FiA2MIlyasProfileFollower extends StatelessWidget {
+  final String title;
+  final String value;
+  const FiA2MIlyasProfileFollower(
+      {super.key, required this.title, required this.value});
 
   @override
   Widget build(BuildContext context) {
