@@ -77,9 +77,9 @@ class Profile extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  StatsColumn(name: "Photos", number: "315"),
-                  StatsColumn(name: "Followers", number: "77.5k"),
-                  StatsColumn(name: "Follows", number: "500"),
+                  StatsColumn(name: "Photos", statistic: "315"),
+                  StatsColumn(name: "Followers", statistic: "77.5k"),
+                  StatsColumn(name: "Follows", statistic: "500"),
                 ],
               ),
             ),

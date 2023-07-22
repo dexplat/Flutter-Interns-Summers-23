@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_interns/assesments/assessment_2/fi_as2_saleh/screens/home/fi_as2_saleh_home.dart';
-// import 'package:flutter_svg/flutter_svg.dart';
 
 class Welcome extends StatefulWidget {
   const Welcome({super.key});
@@ -10,8 +9,7 @@ class Welcome extends StatefulWidget {
 }
 
 class _WelcomeState extends State<Welcome> {
-  // final String assetName = 'assets/svgs/home.svg';
-  final Widget smallPadding = const SizedBox(
+  final Widget smallSpace = const SizedBox(
     height: 50,
   );
 
@@ -26,13 +24,13 @@ class _WelcomeState extends State<Welcome> {
             children: [
               const Image(
                   image: AssetImage('assets/fi_as2_saleh/LoginLogo.png')),
-              smallPadding,
+              smallSpace,
               const Text(
                 "Let's Connect Together",
                 style: TextStyle(fontSize: 36, fontWeight: FontWeight.w600),
                 textAlign: TextAlign.center,
               ),
-              smallPadding,
+              smallSpace,
               SizedBox(
                 height: 60,
                 width: double.infinity,
@@ -46,16 +44,15 @@ class _WelcomeState extends State<Welcome> {
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor:
-                            Colors.white, //background color of button
+                            Colors.white, 
                         side: const BorderSide(
                             width: 1,
-                            color: Colors.black), //border width and color
+                            color: Colors.black), 
                         shape: RoundedRectangleBorder(
-                            //to set border radius to button
                             borderRadius: BorderRadius.circular(50)),
                         padding: const EdgeInsets.symmetric(
                             vertical: 10,
-                            horizontal: 20) //content padding inside button
+                            horizontal: 20) 
                         ),
                     child: const Text(
                       "Login",
@@ -79,16 +76,15 @@ class _WelcomeState extends State<Welcome> {
                     },
                     style: ElevatedButton.styleFrom(
                         backgroundColor: const Color(
-                            0xFFFA9884), //background color of button
+                            0xFFFA9884),
                         side: const BorderSide(
                             width: 1,
-                            color: Colors.black), //border width and color
+                            color: Colors.black),
                         shape: RoundedRectangleBorder(
-                            //to set border radius to button
                             borderRadius: BorderRadius.circular(50)),
                         padding: const EdgeInsets.symmetric(
                             vertical: 10,
-                            horizontal: 20) //content padding inside button
+                            horizontal: 20)
                         ),
                     child: const Text(
                       "Sign up",

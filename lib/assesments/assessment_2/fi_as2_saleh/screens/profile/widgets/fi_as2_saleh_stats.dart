@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class StatsColumn extends StatelessWidget {
   final String name;
-  final String number;
+  final String statistic;
 
-  const StatsColumn({super.key, required this.name, required this.number});
+  const StatsColumn({super.key, required this.name, required this.statistic});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class StatsColumn extends StatelessWidget {
           ),
         ),
         Text(
-          number,
+          statistic,
           style: const TextStyle(
             color: Colors.black,
             fontSize: 20,

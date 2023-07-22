@@ -8,7 +8,7 @@ class Filters extends StatefulWidget {
 }
 
 class _FiltersState extends State<Filters> {
-  List<String> filters = ["Photos", "Video", "Tagged"];
+  final List<String> filters = ["Photos", "Video", "Tagged"];
   int selectedFilter = 0;
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class _FiltersState extends State<Filters> {
                 ),
               ));
         }),
-        Padding(padding: EdgeInsets.only(left: 40), child: InkWell(child: Icon(Icons.more_horiz, size: 30,)),)
+        const Padding(padding: EdgeInsets.only(left: 40), child: InkWell(child: Icon(Icons.more_horiz, size: 30,)),)
         ],
       ),
     );

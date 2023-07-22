@@ -17,7 +17,6 @@ class Avatar extends StatelessWidget {
           backgroundImage: AssetImage(image),
           radius: border ? 33:40,
           child: border ? null: const Icon(Icons.add_box, color: Colors.white, size: 35,)
-          // SvgPicture.asset("assets/svgs/add.svg", colorFilter: const ColorFilter.mode(Color(0x44FFFFFF), BlendMode.xor)),
         ),
       ),
     );
