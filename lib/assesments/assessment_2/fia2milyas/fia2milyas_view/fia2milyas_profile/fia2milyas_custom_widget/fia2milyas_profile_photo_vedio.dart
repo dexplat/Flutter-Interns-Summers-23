@@ -12,7 +12,7 @@ class FiA2MIlyasPhotoVedioRow extends StatelessWidget {
       children: [
         Container(
           height: 30,
-          width: 107,
+          width: 95,
           decoration: BoxDecoration(
             color: const Color(0xff575353),
             borderRadius: BorderRadius.circular(50),
@@ -22,7 +22,7 @@ class FiA2MIlyasPhotoVedioRow extends StatelessWidget {
               'Photos',
               style: TextStyle(
                   color: AppColors.whiteclr,
-                  fontSize: 18,
+                  fontSize: 15,
                   fontWeight: FontWeight.w600),
             ),
           ),

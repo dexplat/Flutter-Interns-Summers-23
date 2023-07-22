@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class FiA2MIlyasRoundedPic extends StatelessWidget {
   final Color borderClr;
-  final Widget custompic;
+  final Widget customPic;
   const FiA2MIlyasRoundedPic(
-      {super.key, required this.borderClr, required this.custompic});
+      {super.key, required this.borderClr, required this.customPic});
 
   @override
   Widget build(BuildContext context) {
@@ -21,44 +21,8 @@ class FiA2MIlyasRoundedPic extends StatelessWidget {
       ),
       child: Padding(
         padding: const EdgeInsets.all(2.0),
-        child: custompic,
+        child: customPic,
       ),
     );
   }
 }
-
-
-// Stack(
-//         clipBehavior: Clip.none,
-//         children: [
-//           Center(
-//             child: Image.asset('assets/girl1.png'),
-//           ),
-//           Positioned(
-//             top: 0,
-
-//             left: 0,
-
-//             right: 0,
-
-//             bottom: 0,
-
-//             child: Container(
-//               height: 10,
-
-//               width: 10,
-
-//               child: Text('1'),
-
-//               //child: SvgPicture.asset('assets/svgs/add.svg')
-//             ),
-
-//             // width: 30,
-
-//             // height: 20,
-
-//             // width: 20,
-//           )
-//         ],
-//       ),
-    

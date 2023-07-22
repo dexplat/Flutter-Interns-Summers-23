@@ -3,8 +3,8 @@ import 'package:flutter_interns/assesments/assessment_2/fia2milyas/fia2milyas_co
 import 'package:flutter_interns/assesments/assessment_2/fia2milyas/fia2milyas_view/fia2milyas_custom_widget/fia2milyas_core/fia2milyas_roundedpic.dart';
 import 'package:flutter_interns/assesments/assessment_2/fia2milyas/fia2milyas_view/fia2milyas_profile/fia2milyas_custom_widget/fia2milyas_profile_photo_vedio.dart';
 import 'package:flutter_interns/assesments/assessment_2/fia2milyas/fia2milyas_view/fia2milyas_profile/fia2milyas_custom_widget/fia2milyas_profile_top_row.dart';
-import 'fia2milyas_custom_widget/fia2milyas_profile_all_followers.dart';
 import 'fia2milyas_custom_widget/fia2milyas_profile_all_post_pic.dart';
+import 'fia2milyas_custom_widget/fia2milyas_profile_follower_header.dart';
 
 class FiA2MIlyasProfileScreen extends StatelessWidget {
   const FiA2MIlyasProfileScreen({super.key});
@@ -26,7 +26,7 @@ class FiA2MIlyasProfileScreen extends StatelessWidget {
               ),
               FiA2MIlyasRoundedPic(
                 borderClr: AppColors.whiteclr,
-                custompic: Image.asset(
+                customPic: Image.asset(
                   'assets/girl1.png',
                 ),
               ),
@@ -49,9 +49,29 @@ class FiA2MIlyasProfileScreen extends StatelessWidget {
               const SizedBox(
                 height: 40,
               ),
-              const FiA2MIlyasProfileAllFollower(),
+              const Padding(
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    FiA2MIlyasProfileFollowerHeader(
+                      title: 'Photos',
+                      value: '315',
+                    ),
+                    FiA2MIlyasProfileFollowerHeader(
+                      title: 'Followers',
+                      value: '77.5k',
+                    ),
+                    FiA2MIlyasProfileFollowerHeader(
+                      title: 'Follows',
+                      value: '500',
+                    ),
+                  ],
+                ),
+              ),
               const SizedBox(
-                height: 40,
+                height: 30,
               ),
               const FiA2MIlyasPhotoVedioRow(),
               const SizedBox(

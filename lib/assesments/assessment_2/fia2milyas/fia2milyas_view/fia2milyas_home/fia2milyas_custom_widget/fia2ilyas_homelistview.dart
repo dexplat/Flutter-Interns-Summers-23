@@ -8,11 +8,10 @@ class FiA2MIlyasHomeListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: MediaQuery.sizeOf(context).width,
-      height: 66,
+      height: 70,
       child: ListView(
-        padding: EdgeInsets.zero,
         scrollDirection: Axis.horizontal,
+        // crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
             height: 70,
@@ -20,7 +19,7 @@ class FiA2MIlyasHomeListView extends StatelessWidget {
               children: [
                 FiA2MIlyasRoundedPic(
                   borderClr: AppColors.whiteclr,
-                  custompic: Image.asset(
+                  customPic: Image.asset(
                     'assets/girl2.png',
                   ),
                 ),
@@ -40,13 +39,13 @@ class FiA2MIlyasHomeListView extends StatelessWidget {
           ),
           FiA2MIlyasRoundedPic(
               borderClr: AppColors.primaryColor,
-              custompic: Image.asset('assets/man1.png')),
+              customPic: Image.asset('assets/man1.png')),
           FiA2MIlyasRoundedPic(
               borderClr: AppColors.primaryColor,
-              custompic: Image.asset('assets/girl2.png')),
+              customPic: Image.asset('assets/girl2.png')),
           FiA2MIlyasRoundedPic(
               borderClr: AppColors.primaryColor,
-              custompic: Image.asset('assets/man1.png')),
+              customPic: Image.asset('assets/man1.png')),
         ],
       ),
     );

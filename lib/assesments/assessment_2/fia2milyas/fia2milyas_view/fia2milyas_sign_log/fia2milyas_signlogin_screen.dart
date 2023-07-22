@@ -40,19 +40,20 @@ class FiA2MIlyasLogInScreen extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => const FiA2MIlyasHomeScreen()),
+                    builder: (context) => const FiA2MIlyasHomeScreen(),
+                  ),
                 );
               },
               child: const FiA2MIlyasMyAppButton(
-                buttontxt: 'Login',
-                txtclr: Colors.black,
-                concolor: Colors.white,
+                buttonText: 'Login',
+                textColor: Colors.black,
+                bgColor: Colors.white,
               ),
             ),
             const FiA2MIlyasMyAppButton(
-              buttontxt: 'Sign up',
-              txtclr: Colors.white,
-              concolor: Color(0xfffa9884),
+              buttonText: 'Sign up',
+              textColor: Colors.white,
+              bgColor: Color(0xfffa9884),
             ),
           ],
         ),

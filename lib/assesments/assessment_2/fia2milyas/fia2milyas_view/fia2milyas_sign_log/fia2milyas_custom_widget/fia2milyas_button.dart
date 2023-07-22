@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 class FiA2MIlyasMyAppButton extends StatelessWidget {
-  final String buttontxt;
-  final Color concolor;
-  final Color txtclr;
+  final String buttonText;
+  final Color bgColor;
+  final Color textColor;
   const FiA2MIlyasMyAppButton(
       {super.key,
-      required this.buttontxt,
-      required this.concolor,
-      required this.txtclr});
+      required this.buttonText,
+      required this.bgColor,
+      required this.textColor});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class FiA2MIlyasMyAppButton extends StatelessWidget {
         height: 65,
         width: 320,
         decoration: BoxDecoration(
-          color: concolor,
+          color: bgColor,
           borderRadius: BorderRadius.circular(50),
           border: Border.all(
             color: const Color(0xff9E9898),
@@ -26,10 +26,10 @@ class FiA2MIlyasMyAppButton extends StatelessWidget {
         ),
         child: Center(
           child: Text(
-            buttontxt,
+            buttonText,
             textAlign: TextAlign.center,
             style: TextStyle(
-                color: txtclr, fontWeight: FontWeight.bold, fontSize: 16),
+                color: textColor, fontWeight: FontWeight.bold, fontSize: 16),
           ),
         ),
       ),
