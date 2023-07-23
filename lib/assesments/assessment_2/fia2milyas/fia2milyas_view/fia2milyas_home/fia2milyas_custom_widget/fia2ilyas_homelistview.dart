@@ -11,7 +11,6 @@ class FiA2MIlyasHomeListView extends StatelessWidget {
       height: 70,
       child: ListView(
         scrollDirection: Axis.horizontal,
-        // crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
             height: 70,
