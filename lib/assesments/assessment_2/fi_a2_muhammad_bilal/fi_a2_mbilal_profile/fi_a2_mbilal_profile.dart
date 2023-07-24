@@ -130,7 +130,7 @@ class _BilalProfileScreenState extends State<BilalProfileScreen> {
                         width: 107,
                         height: 39,
                         decoration: BoxDecoration(
-                          color: Color(0xFFF575353),
+                          color: const Color(0xfff57553),
                           borderRadius: BorderRadius.circular(50),
                         ),
                         child: Text(
@@ -161,7 +161,7 @@ class _BilalProfileScreenState extends State<BilalProfileScreen> {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: 25, left: 24, right: 19),
+          padding: const EdgeInsets.only(top: 25, left: 24, right: 19),
           child: Row(
             children: [
               Container(

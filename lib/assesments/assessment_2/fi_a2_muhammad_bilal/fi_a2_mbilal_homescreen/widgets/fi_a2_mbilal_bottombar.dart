@@ -4,7 +4,6 @@ import 'package:flutter_svg/svg.dart';
 class BilalBottomBar extends StatelessWidget {
   BilalBottomBar({Key? key}) : super(key: key);
 
-  @override
   final icons = [
     'assets/svgs/home.svg',
     'assets/svgs/Search.svg',
@@ -13,6 +12,7 @@ class BilalBottomBar extends StatelessWidget {
     'assets/svgs/notification_2.svg'
   ];
 
+  @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(left: 22, top: 24, right: 21),
@@ -21,7 +21,7 @@ class BilalBottomBar extends StatelessWidget {
         height: 75,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          color: Color(0xFF575353),
+          color: const Color(0xFF575353),
         ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,

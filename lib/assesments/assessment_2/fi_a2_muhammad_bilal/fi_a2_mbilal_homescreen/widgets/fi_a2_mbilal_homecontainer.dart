@@ -13,13 +13,13 @@ class BilalHomeContainer extends StatelessWidget {
         height: 440,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          color: Color(0xFFFCFCFC),
+          color: const Color(0xFFFCFCFC),
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.5),
               spreadRadius: 3,
               blurRadius: 4,
-              offset: Offset(0, 3), // changes position of shadow
+              offset: const Offset(0, 3), // changes position of shadow
             ),
           ],
         ),
@@ -34,7 +34,7 @@ class BilalHomeContainer extends StatelessWidget {
                     borderRadius: BorderRadius.circular(40),
                     border: Border.all(
                       width: 3,
-                      color: Color(0xFFFA9884),
+                      color: const Color(0xFFFA9884),
                     ),
                   ),
                   child: CircleAvatar(

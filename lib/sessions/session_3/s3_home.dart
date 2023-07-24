@@ -29,6 +29,8 @@ class S3Home extends StatelessWidget {
           children: [
             for (int i = 0; i < 5; i++)
               ListTile(
+                onTap: () {},
+                onLongPress: () {},
                 leading: Checkbox(
                   value: i.isEven,
                   onChanged: (value) {},
