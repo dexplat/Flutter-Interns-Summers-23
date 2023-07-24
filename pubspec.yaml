@@ -63,8 +63,13 @@ flutter:
     - assets/
     - assets/images/
     - assets/svgs/
+<<<<<<< HEAD
+    - assets/fi_a2_mbilal_assets/
+    - assets/images/
+=======
     - assets/fi-as2-hira-assets/
     - assets/fi-as2-hira-assets/hira_svg/
+>>>>>>> 0d2bc86b0c56f636df52fbc1b62251effd913257
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
