@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+part '_modal.dart';
+
 class S3Home extends StatelessWidget {
   const S3Home({super.key});
 
@@ -10,7 +12,16 @@ class S3Home extends StatelessWidget {
         title: const Text('Todo App'),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () async {
+          await showModalBottomSheet(
+            context: context,
+            backgroundColor: Colors.transparent,
+            isScrollControlled: true,
+            builder: (context) {
+              return const _Modal();
+            },
+          );
+        },
         child: const Icon(Icons.add),
       ),
       body: SafeArea(
