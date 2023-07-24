@@ -1,5 +1,9 @@
+
 import 'package:flutter/material.dart';
-import 'package:flutter_interns/sessions/session_1/s1_home.dart';
+
+import 'assesments/assessment_2/fi-s2-MAtif/Screens/LoginScreen.dart';
+import 'assesments/assessment_2/fi-s2-MAtif/Screens/fi-s2-Atif-Screen3/Screen3.dart';
+
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -13,7 +17,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Summer Internship \'23',
-      home: S1Home(),
+      home: FiA2AtifLogin(),
     );
   }
 }
