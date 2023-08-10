@@ -40,7 +40,7 @@ class S1Home extends StatelessWidget {
           smallSpace,
           AppButton(
             onPressed: () {
-              print('new button');
+              debugPrint('new button');
             },
             color: Constants.primaryColor,
             child: const Text(
