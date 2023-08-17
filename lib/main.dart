@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_interns/sessions/session_7/screen/pokemon_screen/pokemon_screen.dart';
+import 'package:flutter_interns/sessions/session_8/home_screen.dart';
 
 import 'firebase_options.dart';
 
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Summer Internship \'23',
       theme: ThemeData(useMaterial3: true),
-      home: const PokemonScreen(),
+      home: const HomeScreen(),
     );
   }
 }
