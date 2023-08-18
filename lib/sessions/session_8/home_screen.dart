@@ -1,21 +1,38 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_interns/sessions/session_8/providers/app_provider.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final appState = AppState.s(context);
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home'),
         elevation: 0,
         backgroundColor: Colors.white,
       ),
-      body: const Padding(
-        padding: EdgeInsets.all(16),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
         child: Column(
           children: [
-            Text('Home')
+            Text(appState.counter.toString()),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                appState.increment();
+              },
+              child: const Text('Add'),
+            ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                appState.decrement();
+              },
+              child: const Text('Subtract'),
+            ),
           ],
         ),
       ),
