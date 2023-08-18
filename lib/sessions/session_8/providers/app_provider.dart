@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class AppState extends ChangeNotifier {
-
   static AppState s(BuildContext context) => Provider.of<AppState>(context, listen: true); 
 
   int counter = 0;
@@ -15,5 +14,22 @@ class AppState extends ChangeNotifier {
   void decrement() {
     counter--;
     notifyListeners();
+  }
+
+  bool isLoading = false;
+
+  void toggleLoader() {
+    isLoading = !isLoading;
+    notifyListeners();
+  } 
+
+  List<int> data = [];
+
+  void fetchData() {
+    toggleLoader();
+    Future.delayed(const Duration(seconds: 2), () {
+      data = List.generate(10, (index) => index);
+      toggleLoader();
+    });
   }
 }

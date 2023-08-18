@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_interns/sessions/session_8/home_screen.dart';
+import 'package:flutter_interns/sessions/session_8/screens/home_screen.dart';
 import 'package:flutter_interns/sessions/session_8/providers/app_provider.dart';
 import 'package:provider/provider.dart';
 

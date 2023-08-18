@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_interns/sessions/session_8/providers/app_provider.dart';
+import 'package:flutter_interns/sessions/session_8/screens/second_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -33,6 +34,17 @@ class HomeScreen extends StatelessWidget {
               },
               child: const Text('Subtract'),
             ),
+            const SizedBox(height: 16),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) => const SecondScreen(),
+                  ),
+                );
+              },
+              child: const Text('Go to Second Screen'),
+            )
           ],
         ),
       ),
