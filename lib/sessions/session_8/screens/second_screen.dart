@@ -7,7 +7,7 @@ class SecondScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final appProvider = Provider.of<AppState>(context, listen: true);
+    final appProvider = Provider.of<AppState>(context);
 
     return Scaffold(
       appBar: AppBar(
