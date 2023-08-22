@@ -32,4 +32,11 @@ class AppState extends ChangeNotifier {
       toggleLoader();
     });
   }
+
+  int selectedTabIndex = 0;
+
+  void changeTab(int index) {
+    selectedTabIndex = index;
+    notifyListeners();
+  }
 }

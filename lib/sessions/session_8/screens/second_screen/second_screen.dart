@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_interns/sessions/session_8/providers/app_provider.dart';
-import 'package:provider/provider.dart';
+part 'static/_data.dart';
 
 class SecondScreen extends StatelessWidget {
   const SecondScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final appProvider = Provider.of<AppState>(context);
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('Second Screen'),
@@ -17,7 +14,7 @@ class SecondScreen extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-          appProvider.counter.toString(),
+          _Data.notTabs[0],
           style: const TextStyle(fontSize: 32),
         ),
       ),
