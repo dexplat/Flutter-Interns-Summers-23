@@ -26,7 +26,7 @@ class PokeProvider {
       return pokemons;
     } catch (e) {
       debugPrint('---- $e ----');
-      rethrow;
+      throw ('Failed to fetch pokemons');
     }
   }
 }

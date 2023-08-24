@@ -1,5 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_interns/sessions/session_7/blocs/pokemon/pokemon_bloc.dart';
 import 'package:flutter_interns/sessions/session_7/screen/pokemon_screen/pokemon_screen.dart';
 import 'package:flutter_interns/sessions/session_8/providers/app_provider.dart';
 import 'package:provider/provider.dart';
@@ -22,6 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
+        BlocProvider(create: (_) => PokemonBloc()),
         ChangeNotifierProvider(create: (_) => AppState()),
       ],
       child: MaterialApp(
