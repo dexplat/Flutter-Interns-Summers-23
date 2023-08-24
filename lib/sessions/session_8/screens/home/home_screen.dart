@@ -25,14 +25,14 @@ class HomeScreen extends StatelessWidget {
             Wrap(
               spacing: 10,
               runSpacing: 10,
-              children: [
-                ..._Data.tabs.map((e) => TabTile(
-                      title: e,
-                      isSelected:
-                          _Data.tabs.indexOf(e) == appState.selectedTabIndex,
-                      index: _Data.tabs.indexOf(e),
-                    )),
-              ],
+              children: _Data.tabs
+                  .map((e) => TabTile(
+                        title: e,
+                        isSelected:
+                            _Data.tabs.indexOf(e) == appState.selectedTabIndex,
+                        index: _Data.tabs.indexOf(e),
+                      ))
+                  .toList(),
             ),
             const SizedBox(
               height: 20,
